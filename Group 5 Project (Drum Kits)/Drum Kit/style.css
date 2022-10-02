@@ -1,0 +1,121 @@
+:root{
+    --background: #000000;
+    --text: #f3ca20;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background: var(--background);
+}
+.container{
+    padding: 10px;
+    min-height: 90vh;
+    margin: 3vh auto;
+    box-shadow: inset 2px 2px 5px var(--text),
+                inset -2px -2px 5px var(--text);
+    border-radius: 7px;
+}
+
+.title{
+    margin: 20px 20px;
+    font-size: 6rem;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.9;
+    color: var(--text);
+    margin: 50px;
+    margin-bottom: 100px;
+}
+.drum{
+    width: 170px;
+    height: 170px;
+    background: var(--background);
+    color: var(--text);
+    font-size: 4rem;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+                1px 1px 3px rgba(0, 0, 0, 0.8);
+    margin: 10px;
+    border-radius: 15px;
+}
+.w, .d, .l{
+    border-radius: 50%;
+    background: var(--text);
+    color: var(--background);
+}
+.w{
+    background-image: url(images/crash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.a{
+    background-image: url(images/tom1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.s{
+    background-image: url(images/tom3.png);
+    background-size: 180px;
+    background-repeat: no-repeat;
+}
+.d{
+    background-image: url(images/kick1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.j{
+    background-image: url(images/tom4.png);
+    background-size: 180px;
+    background-repeat: no-repeat;
+}
+.k{
+    background-image: url(images/tom2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.l{
+    background-image: url(images/snare.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.volume_control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+#volume_slider{
+    height: 7px;
+    width: 200px;
+    margin-left: 10px;
+    appearance: none;
+    background: var(--text);
+    border-radius: 7px;
+    outline: none;
+}
+#volume_slider::-webkit-slider-thumb{
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--text);
+    cursor: pointer;
+}
+
+
+footer{
+    color: var(--text);
+    font-family: sans-serif;
+}
+.pressed{
+    opacity: 0.5;
+    box-shadow: -1px -1px 3px var(--background);
+}
